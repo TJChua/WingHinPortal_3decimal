@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="PurchaseBlanketAgreement_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PurchaseBlanketAgreement">
+              <LayoutGroup Id="PurchaseBlanketAgreement_col1">
+                <LayoutItem Id="StartDate" RelativeSize="23.148148148148149" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PurchaseBlanketAgreement_col2">
+                <LayoutItem Id="ItemGroup" RelativeSize="17.821782178217823" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

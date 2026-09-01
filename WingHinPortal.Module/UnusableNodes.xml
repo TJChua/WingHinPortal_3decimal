@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Purchase - A/P" Index="2">
+        <Items Id="Items">
+          <Item Id="PurchaseRequest_ListView" Index="0" />
+          <Item Id="PurchaseOrders_ListView" Index="1" />
+          <Item Id="GoodsReceipt_ListView" Index="2" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

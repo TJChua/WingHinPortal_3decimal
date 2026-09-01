@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="GoodsIssueDetails_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="GoodsIssueDetails">
+              <LayoutItem Id="Item" RelativeSize="7.4226804123711343" />
+              <LayoutItem Id="ItemDesc" RelativeSize="5.3608247422680408" />
+              <LayoutItem Id="ItemGroup" Index="2" RelativeSize="5.3608247422680408" />
+              <LayoutItem Id="Quantity" Index="3" RelativeSize="81.855670103092777" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

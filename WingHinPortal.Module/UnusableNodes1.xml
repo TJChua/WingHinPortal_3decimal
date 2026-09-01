@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="PurchaseOrders_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PurchaseOrders">
+              <LayoutGroup Id="PurchaseOrders_col1">
+                <LayoutItem Id="Requestor" ViewItem="Requestor" />
+              </LayoutGroup>
+              <LayoutGroup Id="PurchaseOrders_col2">
+                <LayoutItem Id="Requestor" RelativeSize="21.951219512195124" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PurchaseRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PurchaseRequest">
+              <LayoutGroup Id="PurchaseRequest_col1">
+                <LayoutItem Id="Requestor" RelativeSize="15.853658536585366" Index="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
