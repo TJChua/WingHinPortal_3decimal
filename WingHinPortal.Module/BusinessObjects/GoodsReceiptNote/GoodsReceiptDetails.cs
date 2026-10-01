@@ -190,6 +190,7 @@ namespace WingHinPortal.Module.BusinessObjects.GoodsReceipt
 
         private string _Vehicle;
         [XafDisplayName("Vehicle")]
+        [Size(50)]
         [Index(7), VisibleInListView(true), VisibleInDetailView(true), VisibleInLookupListView(true)]
         public string Vehicle
         {

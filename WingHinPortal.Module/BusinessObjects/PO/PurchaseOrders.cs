@@ -332,6 +332,7 @@ namespace WingHinPortal.Module.BusinessObjects.PO
 
         private string _VehicleNo;
         [XafDisplayName("Vehicle No")]
+        [Size(50)]
         [Index(28), VisibleInDetailView(true), VisibleInListView(false), VisibleInLookupListView(false)]
         public string VehicleNo
         {
