@@ -28,6 +28,7 @@ using WingHinPortal.Module.BusinessObjects.Setup;
 using WingHinPortal.Module.BusinessObjects.View;
 
 // 20260512 - add cost center 2 - ver 1.0.2
+// 20261016 - block submit if posting period lock - ver 1.0.3
 
 namespace WingHinPortal.Module.Controllers
 {
@@ -172,6 +173,28 @@ namespace WingHinPortal.Module.Controllers
                     showMsg("Error", "No allow to submit due to zero total.", InformationType.Error);
                     return;
                 }
+
+                // Start ver 1.0.3
+                string getpostingperiod = "SELECT * From vwPostingPeriod WHERE F_RefDate <= '" + selectedObject.PostingDate.Date.ToString("yyyy-MM-dd") + "' " +
+                    "AND T_RefDate >= '" + selectedObject.PostingDate.Date.ToString("yyyy-MM-dd") + "'";
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+                conn.Open();
+                SqlCommand cmdperiod = new SqlCommand(getpostingperiod, conn);
+                SqlDataReader readerperiod = cmdperiod.ExecuteReader();
+                while (readerperiod.Read())
+                {
+                    if (readerperiod.GetString(3) != "N")
+                    {
+                        showMsg("Error", "Posting period locked.", InformationType.Error);
+                        return;
+                    }
+                }
+                cmdperiod.Dispose();
+                conn.Close();
+                // End ver 1.0.3
 
                 SystemUsers user = (SystemUsers)SecuritySystem.CurrentUser;
 
